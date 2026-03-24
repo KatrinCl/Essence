@@ -4,7 +4,7 @@ import ExploreMassage from './ExploreMassage'
 
 const Massage = () => {
   const [massage, setMassage] = useState(() => {
-    return localStorage.getItem('selectedMassage') || 'Тайский массаж'
+    return localStorage.getItem('selectedMassage') || 'Традиционный массаж'
   })
 
   useEffect(() => {
