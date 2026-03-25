@@ -1,8 +1,34 @@
-# React + Vite
+# 🌿 Essence SPA Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Сайт-визитка для SPA-салона с современным дизайном и интерактивным выбором услуг.
 
-Currently, two official plugins are available:
+## 🔗 Демо
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://essence-rust.vercel.app
+
+## ✨ Функционал
+
+* 📌 Просмотр SPA-программ и массажей
+* 👩‍⚕️ Выбор мастеров с динамическим обновлением информации
+* 💾 Сохранение выбранных услуг и мастеров (localStorage)
+* 📱 Полностью адаптивный дизайн
+* 📩 Форма обратной связи (Web3Forms)
+* 🎞️ Слайдер с курсами массажа
+
+## 🛠️ Технологии
+
+* React
+* Tailwind CSS
+* Vite
+* Vercel (деплой)
+* Web3Forms (отправка формы)
+
+## ⚡ Особенности реализации
+
+* Использование `localStorage` для сохранения выбранных данных
+* Динамическое обновление контента без перезагрузки страницы
+* Адаптивная верстка под мобильные устройства
+
+## 📬 Контакты
+
+Если есть вопросы или предложения — можете связаться со мной katya55293@gmail.com, 8-901-285-3563.
