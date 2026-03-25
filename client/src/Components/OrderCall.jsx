@@ -8,7 +8,7 @@ const OrderCall = ({ onClose }) => {
     setResult('Отправляется...')
 
     const formData = new FormData(event.target)
-    formData.append('access_key', '0cbfb9cc-a4cd-4586-a7fb-d34271cd6434')
+    formData.append('access_key', '27f49f85-61b3-40a9-ab8d-82ab671ba860')
 
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
