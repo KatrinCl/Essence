@@ -10,9 +10,6 @@ import massage_4 from './massage_4.jpg'
 import massage_5 from './massage_5.jpg'
 import massage_6 from './massage_6.png'
 
-
-
-
 export const masters_list = [
     {
         master_name: "Мастер Нари",
@@ -51,27 +48,6 @@ export const master_list = [
         description: "Мастер с Бали. Владеет всеми видами массажа. Очень чуткая девушка , ко всем клиентам подходит индивидуально. У мастера Падми очень сильные руки, особенно хорош в ее исполнении балийский  массаж и спа программы.",
     },
 
-]
-
-export const massage_list = [
-    {
-        massage_name: "Традиционный массаж",
-    },
-    {
-        massage_name: "Расслабляющий массаж",
-    },
-    {
-        massage_name: "Целебный массаж",
-    },
-    {
-        massage_name: "Спортивный массаж",
-    },
-    {
-        massage_name: "Slim-массаж",
-    },
-    {
-        massage_name: "Балийский массаж",
-    }
 ]
 
 export const price_list = [

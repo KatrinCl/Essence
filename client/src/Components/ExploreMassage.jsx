@@ -1,5 +1,5 @@
 import React from 'react'
-import { massage_list } from './../../public/assets.js'
+import { price_list } from './../../public/assets.js'
 
 const ExploreMassage = ({ massage, setMassage }) => {
   return (
@@ -7,15 +7,15 @@ const ExploreMassage = ({ massage, setMassage }) => {
       <hr className='w-full max-w-5xl border-white/20' />
 
       <div className='flex flex-wrap justify-center gap-6 md:gap-10 text-center'>
-        {massage_list.map((item, index) => (
+        {price_list.map((item, index) => (
           <div
             key={index}
             onClick={() => {
-              setMassage(item.massage_name)
-              localStorage.setItem('selectedMassage', item.massage_name)
+              setMassage(item.name)
+              localStorage.setItem('selectedMassage', item.name)
             }}
             className='cursor-pointer'>
-            <p className={`text-sm md:text-lg text-center max-w-[100px] md:max-w-[140px] leading-tight break-words ${massage === item.massage_name ? 'text-yellow-500 border-b-2 border-yellow-500' : 'text-white/60 hover:text-yellow-400'}`}>{item.massage_name}</p>
+            <p className={`text-sm md:text-lg text-center max-w-[100px] md:max-w-[140px] leading-tight break-words ${massage === item.name ? 'text-yellow-500 border-b-2 border-yellow-500' : 'text-white/60 hover:text-yellow-400'}`}>{item.name}</p>
           </div>
         ))}
       </div>
