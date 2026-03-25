@@ -4,7 +4,11 @@ import ExploreMasters from './ExploreMasters'
 
 const Masters = () => {
   const [master, setMaster] = useState(() => {
-    return localStorage.getItem('selectedMaster') || 'Мастер Нари'
+    const saved = localStorage.getItem('selectedMaster')
+
+    const exists = master_list.some(item => item.name === saved)
+
+    return exists ? saved : 'Мастер Нари'
   })
 
   useEffect(() => {

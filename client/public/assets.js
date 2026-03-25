@@ -10,21 +10,6 @@ import massage_4 from './massage_4.jpg'
 import massage_5 from './massage_5.jpg'
 import massage_6 from './massage_6.png'
 
-export const masters_list = [
-    {
-        master_name: "Мастер Нари",
-    },
-    {
-        master_name: "Мастер Суда",
-    },
-    {
-        master_name: "Мастер Ради",
-    },
-    {
-        master_name: "Мастер Бунси",
-    },
-
-]
 
 export const master_list = [
     {
