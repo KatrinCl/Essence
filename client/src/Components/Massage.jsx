@@ -4,14 +4,18 @@ import ExploreMassage from './ExploreMassage'
 
 const Massage = () => {
   const [massage, setMassage] = useState(() => {
-    return localStorage.getItem('selectedMassage') || 'Традиционный массаж'
+    const saved = localStorage.getItem('selectedMassage')
+
+    const exists = price_list.some(item => item.name === saved)
+
+    return exists ? saved : 'Традиционный массаж'
   })
 
   useEffect(() => {
     localStorage.setItem('selectedMassage', massage)
   }, [massage])
 
-  const current = price_list.find(item => item.name === massage)
+  const current = price_list.find(item => item.name === massage) || price_list[0]
 
   return (
     <div id='massage' className='w-full flex items-center min-h-screen bg-cover bg-center bg-no-repeat' style={{ backgroundImage: "linear-gradient(rgba(72,44,45,0.5), rgba(187,172,173,0)), url('/ground.jpg')" }}>

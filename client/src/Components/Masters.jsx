@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { master_list, price_list } from '../../public/assets'
+import { master_list } from '../../public/assets'
 import ExploreMasters from './ExploreMasters'
 
 const Masters = () => {
@@ -11,7 +11,7 @@ const Masters = () => {
     localStorage.setItem('selectedMaster', master)
   }, [master])
 
-  const current = price_list.find(item => item.name === master)
+  const current = master_list.find(item => item.name === master)
 
   return (
     <div id='masters' className='w-full flex items-center min-h-screen bg-cover bg-center bg-no-repeat' style={{ backgroundImage: "linear-gradient(rgba(72,44,45,0.5), rgba(187,172,173,0)), url('/brown.jpg')" }}>
