@@ -6,6 +6,8 @@
 
 https://essence-rust.vercel.app
 
+https://github.com/KatrinCl/Essence
+
 ## ✨ Функционал
 
 * 📌 Просмотр SPA-программ и массажей
